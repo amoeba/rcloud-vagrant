@@ -16,7 +16,7 @@ As outlined in the RCloud documentation, we need to set up a GitHub application 
 
 I have configured the Vagrantfile to read the Client ID and Secret from the user's environment variables.
 
-# Installing
+## Installing
 
 Clone this repository to your local computer by running
 
