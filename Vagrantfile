@@ -1,17 +1,12 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-# GITHUB CONFIGURATION
-# Set the following environment variables using export before running vagrant up
-GITHUB_CLIENT_ID = ENV["RCLOUD_GITHUB_CLIENT_ID"] || "GITHUB CLIENT ID NOT SET"
-GITHUB_SECRET = ENV["RCLOUD_GITHUB_SECRET"] || "GITHUB SECRET NOT SET"
-
 # Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ubuntu"
-  config.vm.box_url = "http://files.vagrantup.com/precise64_vmware_fusion.box"
+  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
 
   config.vm.network :forwarded_port, guest: 8080, host: 8080
   config.vm.network :forwarded_port, guest: 8081, host: 8081

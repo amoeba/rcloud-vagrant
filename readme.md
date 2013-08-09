@@ -9,12 +9,9 @@ There are two things you'll definitely need to have before starting:
 - Vagrant (http://www.vagrantup.com)
 - Virtual Box (http://www.virtualbox.org)
 
-As outlined in the RCloud documentation, we need to set up a GitHub application for RCloud. Once you've done that, run the following commands on the your local computer (replacing the appropriate values):
+As outlined in the RCloud documentation, we need to set up a GitHub application for RCloud (https://github.com/settings/applications). Once you've done that, edit the github_info.txt accordingly (more at https://github.com/cscheid/rcloud#github-authentication). This will likely just required editing the first two lines with your GitHub Client ID and Secret.
 
-    $ export RCLOUD_GITHUB_CLIENT_ID={YOUR CLIENT ID HERE}
-    $ export RCLOUD_GITHUB_SECRET={YOUR SECRET HERE}
-
-The Vagrantfile is configured to read the Client ID and Secret from environmental variables set on the local machine and uses them to create the `github_info.txt` file required by RCloud to establish a connection with GitHub.
+The Vagrantfile will then copy this file into the VM so RCloud can use it to authenticate.
 
 ## Installing
 

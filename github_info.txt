@@ -1,0 +1,4 @@
+-- YOUR GITHUB ID HERE --
+-- YOUR APP SECRET HERE --
+https://github.com/
+https://api.github.com/
