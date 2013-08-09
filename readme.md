@@ -30,6 +30,6 @@ You should see Vagrant download, configure and provision the virtual machine and
 
 If everything has finished without error, you should now be running RCloud. Open a WebSockets-able browser and navigate to
 
-    http://127.0.0.1/login.html
+    http://127.0.0.1:8080/login.html
 
 and enter your GitHub username and click the Login button. You should now be staring at RCloud. Again, if you aren't, please get in touch.
