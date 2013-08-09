@@ -24,7 +24,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     "sudo apt-get install -y unzip; "\
     "wget https://github.com/cscheid/rcloud/archive/master.zip; unzip master.zip; cd rcloud-master;" \
     "echo -e 'Cookie.Domain: 127.0.0.1' > ./conf/rcloud.conf;" \
-    "echo -e '#{GITHUB_CLIENT_ID}\n#{GITHUB_SECRET}\nhttps://github.com/\nhttps://api.github.com/' > ./conf/github_info.txt; " \
+    "cp /vagrant/github_info.txt ./conf/github_info.txt; " \
     "sudo sh ./scripts/fresh_start.sh"
 
   config.vm.provision :shell,
